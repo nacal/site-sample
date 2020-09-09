@@ -1,0 +1,75 @@
+@charset 'UTF-8';
+/*
+  Media
+-----------------------------------------------------*/
+
+.p-media {
+  display: block;
+  overflow: hidden;
+  padding: .5em;
+  border: 1px solid #ddd;
+  background-color: $base-color;
+  text-decoration: none;
+
+  @include mq(tab) {
+    padding: 1em;
+  }
+
+
+  &:hover {
+    background-color: $sub-color;
+  }
+
+  &__thumbnail {
+    float: left;
+    width: 34%;
+
+    @include mq(tab) {
+      width: 37%;
+    }
+    @include mq(lap) {
+      width: 40%;
+    }
+  }
+
+  &__body {
+    position: relative;
+    float: right;
+    width: 63%;
+    line-height: 1.5;
+
+    @include mq(tab) {
+      position: relative;
+      width: 60%;
+    }
+    @include mq(lap) {
+      width: 57%;
+    }
+  }
+
+  &__title {
+    margin-top: 1.5em;
+    font-size: .875em;
+
+    @include mq(tab) {
+      font-size: 1em;
+    }
+    @include mq(lap) {
+      font-size: 1.25em;
+    }
+  }
+
+  &__publish {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: .75em;
+
+    @include mq(tab) {
+      font-size: .875em;
+    }
+    @include mq(lap) {
+      font-size: 1em;
+    }
+  }
+}

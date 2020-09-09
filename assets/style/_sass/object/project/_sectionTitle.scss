@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+/*
+  Section Title
+-----------------------------------------------------*/
+
+.p-sectionTitle {
+  display: block;
+  margin-bottom: 1em;
+  font-weight: 700;
+
+  &--primary {
+    padding-left: .5em;
+    text-align: center;
+    font-size: 2em;
+    line-height: .3;
+
+    @include mq(tab) {
+      margin-bottom: .83333333em;
+      font-size: 3em;
+    }
+  }
+
+  &__caption {
+    font-weight: 400;
+    font-size: .375em;
+
+    @include mq(tab) {
+      font-size: .333333em;
+    }
+  }
+
+  &--primary span {
+    line-height: 1;
+  }
+}

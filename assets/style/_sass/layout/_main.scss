@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+/*
+  Main
+-----------------------------------------------------*/
+
+.l-main {
+  padding-top: 2.5em;
+
+  @include mq(tab) {
+    padding-top: 5em;
+  }
+}

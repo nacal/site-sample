@@ -1,0 +1,58 @@
+@charset 'UTF-8';
+/*
+  Hero
+-----------------------------------------------------*/
+
+.p-hero {
+  position: relative;
+
+  &__body {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    -webkit-transform: translate(0, -20%);
+        -ms-transform: translate(0, -20%);
+            transform: translate(0, -20%);
+
+    @include mq(tab) {
+      top: 40%;
+      left: 60%;
+      -webkit-transform: translate(20%, -20%);
+          -ms-transform: translate(20%, -20%);
+              transform: translate(20%, -20%);
+    }
+  }
+
+  &--home &__copy {
+    text-shadow: 0 0 2px rgba(255, 255, 255, 1);
+    letter-spacing: .15em;
+    font-weight: 700;
+    font-size: 4vw;
+
+    @include mq(tab) {
+      font-size: 2.6vw;
+    }
+    @include mq(lap) {
+      font-size: 2.2vw;
+    }
+  }
+
+  &__image img {
+    width: 100%;
+  }
+
+  &--home &__emphasis {
+    display: block;
+    font-size: 5em;
+    line-height: 1em;
+  }
+  &--home &__subtext {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 2.2em;
+  }
+
+  &--home &__date {
+    font-size: 1.15em;
+  }
+}

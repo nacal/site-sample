@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+/*
+  Label
+-----------------------------------------------------*/
+
+.c-label {
+  display: inline-block;
+  padding: .2em .5em;
+  color: #fff;
+  font-weight: 700;
+  font-size: .75em;
+
+  &--blue {
+    background-color: #1a237e;
+  }
+  &--red {
+    background-color: #b71c1c;
+  }
+  &--amber {
+    background-color: #fbc02d;
+  }
+}

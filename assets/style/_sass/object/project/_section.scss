@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+/*
+  Section
+-----------------------------------------------------*/
+
+.p-section {
+  padding: 1.5em 0;
+
+  @include mq(tab) {
+    padding: 2.5em 0;
+  }
+
+  &__button {
+    clear: both;
+    margin: 1.5em auto 0;
+    max-width: 320px;
+
+    @include mq(tab) {
+      margin-top: 2.5em;
+    }
+  }
+}

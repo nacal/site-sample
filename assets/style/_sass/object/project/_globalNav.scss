@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+/*
+  Grobal Nav
+-----------------------------------------------------*/
+
+.p-globalNav {
+  @include mq(tab) {
+    position: fixed;
+    position: static;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 3em 0 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+    background-color: transparent;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+            transition: -webkit-transform .3s ease-in-out;
+            transition:         transform .3s ease-in-out;
+            transition:         transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+
+
+    &__item {
+      float: left;
+      border-top: 1px solid #ddd;
+      border-top: 0;
+    }
+
+    &__item + &__item {
+      margin-left: 1em;
+    }
+
+    &__item a {
+      display: block;
+      padding: 1em;
+      padding: .2em .5em;
+      color: #212121;
+      color: #212121;
+      text-decoration: none;
+      font-weight: 700;
+      -webkit-transition: all .3s ease-in-out;
+              transition: all .3s ease-in-out; /* IE9非対応 */
+    }
+
+    &__item a:hover {
+      color: $hover-text-color;
+    }
+  }
+}

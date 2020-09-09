@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+/*
+  Centering
+-----------------------------------------------------*/
+
+.l-container {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 95%;
+
+  &.-slim {
+    max-width: $slim-content-width;
+  }
+
+  &--sp--full {
+    width: 100%;
+  }
+}

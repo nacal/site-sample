@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+/*
+  Header
+-----------------------------------------------------*/
+
+.p-header {
+  padding: .75em 0;
+  border-bottom: 1px solid $sub-color;
+  background-color: $main-color;
+
+  @include mq(tab) {
+    padding: 1.5em 0;
+  }
+  @include mq(lap) {
+    padding: 1.75em 0;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    @include mq(tab) {
+      float: left;
+      text-align: left;
+    }
+  }
+
+  &__nav {
+    float: right;
+
+    @include mq(tab) {
+      float: left;
+      margin-left: 2em;
+    }
+    @include mq(lap) {
+      margin-left: 4em;
+    }
+  }
+
+  &__action {
+    position: absolute;
+    top: 0;
+    right: 2.5%;
+    bottom: 0;
+    margin: auto 0;
+    width: 23px;
+    height: 24px;
+  }
+}

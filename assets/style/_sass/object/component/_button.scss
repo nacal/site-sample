@@ -1,0 +1,64 @@
+@charset 'UTF-8';
+/*
+  Button
+-----------------------------------------------------*/
+
+.c-button {
+  position: relative;
+  display: block;
+  outline: 0;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-appearance: none; /* Chrome, Safari, Opera, Android */
+     -moz-appearance: none; /* Firefox */
+          appearance: none; /* IE非対応 */
+  &--primary {
+    padding: 1.25em;
+    background-color: #333;
+    color: #fff;
+    font-size: .875em;
+    -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out; /* IE9非対応 */
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: inline-block;
+      margin: auto 0;
+      width: .5em;
+      height: .5em;
+      content: '';
+      -webkit-transition: all .3s ease-in-out;
+              transition: all .3s ease-in-out; /* IE9非対応 */
+      -webkit-transform: rotate(-45deg); /* Android, Brackberry  */
+          -ms-transform: rotate(-45deg); /* IE9  */
+              transform: rotate(-45deg);
+    }
+
+    &:before {
+      right: 2em;
+      background-color: #fff;
+    }
+
+    &:after {
+      right: 2.2em;
+      background-color: #333;
+    }
+
+    &:hover {
+      background-color: $md-blue-grey-700;
+
+      &:before {
+        right: 1.5em;
+      }
+      &:after {
+        right: 1.7em;
+        background-color: $md-blue-grey-700;
+      }
+    }
+  }
+}

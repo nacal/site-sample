@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+/*
+  Logo
+-----------------------------------------------------*/
+
+.c-logo {
+  display: inline-block;
+
+  &--secondary {
+    margin-bottom: 1em;
+  }
+}

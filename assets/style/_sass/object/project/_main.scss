@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+/*
+  Main
+-----------------------------------------------------*/
+
+.p-main {
+  clear: both;
+  padding-top: 3em;
+  background-color: #fafafa;
+
+  @include mq(tab) {
+    padding-top: 4.5em;
+  }
+  @include mq(lap) {
+    padding-top: 5em;
+  }
+}
